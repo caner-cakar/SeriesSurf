@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ana Sayfa</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+    <div class="navbarr">
+        <a href="index.html">Ana Sayfa</a>
+        <div class="dropdownn">
+            <button class="dropbtn">Ürünlerimiz 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+                <a href="onlyfilm1.html">Filmler</a>
+                <a href="onlytv.html">Diziler</a>
+            </div>
+          </div>
+        <div class="dropdownn">
+            <button class="dropbtn">Birimlerimiz 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+              <a href="filmbirim.html">Film Birimi</a>
+              <a href="dizibirim.html">Dizi Birimi</a>
+            </div>
+        </div>
+        <a href="about.html">Hakkımızda</a>
+        <a href="vizyon.html">Misyon-Vizyon</a>
+        <a href="contact.html">İletişim</a>
+        
+    </div>
+
+
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                        <a href="besttenmovies.html">
+                            <img src="img/besttenmovies.png" width="1000px">
+                        </a>
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                        <a href="besttentv.html">
+                            <img src="img/besttentv.png" width="1000px">
+                        </a>
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                        <a href="trsinema.html">
+                            <img src="img/trsinemaposter.png" width="1000px">
+                        </a>
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                        <a href="trsinematur.html">
+                            <img src="img/trsinematur.png" width="1000px">
+                        </a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+
+    
+    <div class="container-fluid">
+        
+        <main class="tm-main">
+            <!-- Announcements section -->
+            <div class="announcement-container">
+                <button class="announcement-btn"  onclick="openAnnouncementModal(1)">
+                    <img src="announcement.png" style="width: 32px; height: 32px;" alt="Resim Açıklaması">
+                    Dizi Maratonu İçin İdeal Saatler!
+                </button>
+
+                <button class="announcement-btn"  onclick="openAnnouncementModal(2)">
+                    <img src="announcement.png" style="width: 32px; height: 32px;" alt="Resim Açıklaması">
+                    Hafta Sonu Çift Film Keyfi!
+                </button>
+
+                <button class="announcement-btn"  onclick="openAnnouncementModal(3)">
+                    <img src="announcement.png" style="width: 32px; height: 32px;" alt="Resim Açıklaması">
+                    Ailece Sinema Gecesi!
+                </button>
+
+                <button class="announcement-btn"  onclick="openAnnouncementModal(4)">
+                    <img src="announcement.png" style="width: 32px; height: 32px;" alt="Resim Açıklaması">
+                    Gerilim ve Komedi Paketi İle %25 İndirim!
+                </button>
+
+                <button class="announcement-btn"  onclick="openAnnouncementModal(5)">
+                    <img src="announcement.png" style="width: 32px; height: 32px;" alt="Resim Açıklaması">
+                    Gece Alışverişi Özel İndirimi!
+                </button>
+                <br>
+                <a href="duyurular.html" class="moreann" title="Tüm Duyurular">...</a>
+            </div>
+
+            <div id="announcementModal1" class="announcement-modal">
+                <div class="announcement-modal-content">
+                    <span class="close" onclick="closeAnnouncementModal(1)">&times;</span>
+                    <h2 style="text-align: center;"> 
+                        <img src="announcement.png" style="width: 32px; height: 32px;"> En sevdiğiniz dizileri belirli saatlerde satın alın ve özel indirimlerden faydalanın! 
+                        Maraton keyfinizi daha uygun fiyatlarla yaşamak için doğru saatleri kaçırmayın.
+                    </h2>
+                    <p style="text-align: center;">Sitemizde belirtilen saatlerde alışveriş yapan kullanıcılar, seçili dizilerde ek indirimlerden yararlanacaklar. 
+                        Planlarınıza göre en uygun saatleri seçin!
+                    </p>
+                    <img src="img/besttv.png" style="margin-left: 220px; width: 720px; height: 480px;">
+                    <p style="text-align: center;">Özel İndirimli Dizi Listesi ve  Saatleri <a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="pdf-file.png"></a><a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="word.png"></a> </p>
+                    <!-- Additional details or attachments can be added here -->
+                </div>
+            </div>
+        
+            <div id="announcementModal2" class="announcement-modal">
+                <div class="announcement-modal-content">
+                    <span class="close" onclick="closeAnnouncementModal(2)">&times;</span>
+                    <h2 style="text-align: center;">
+                        <img src="announcement.png" style="width: 32px; height: 32px;"> 
+                        Bu hafta sonu iki film alımında %30 indirim fırsatını kaçırmayın! 
+                        Seçili filmleri sepetinize ekleyin ve anında avantajlı alışverişin tadını çıkarın.
+                    </h2>
+
+                    <p style="text-align: center;">Hafta sonu boyunca seçili filmleri çift olarak satın alanlar, özel indirimimizden yararlanacaklar. 
+                        İki filmi bir arada izlemenin keyfini çıkarın!
+                    </p>
+                    <img src="img/besttv.png" style="margin-left: 220px; width: 720px; height: 480px;">
+                    <p style="text-align: center;">İndirimli Film Listesi <a href="#"> <img style="width: 32px; height: 32px; margin-left: 20px;" src="pdf-file.png"></a><a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="word.png"></a> </p>
+                    <!-- Additional details or attachments can be added here -->
+                </div>
+            </div>
+
+            <div id="announcementModal3" class="announcement-modal">
+                <div class="announcement-modal-content">
+                    <span class="close" onclick="closeAnnouncementModal(3)">&times;</span>
+                    <h2 style="text-align: center;">
+                        <img src="announcement.png" style="width: 32px; height: 32px;"> 
+                        Ailecek sinema gecesi düzenleyin ve 
+                        belirli film ve dizi kombinasyonlarıyla ekstra indirimleri kapın! Aile boyu eğlenceyi daha uygun fiyatlarla yaşayın.
+                    </h2>
+
+                    <p style="text-align: center;">Belirli film ve dizi kombinasyonlarıyla alışveriş 
+                        yapan aileler, sepetlerindeki toplam tutarda özel bir indirim kazanacaklar. Ailece keyifli bir sinema gecesi sizi bekliyor!
+                    </p>
+                    <img src="img/besttv.png" style="margin-left: 220px; width: 720px; height: 480px;">
+                    <p style="text-align: center;">Ailece Sinema Gecesi İndirim Kombinasyonları, Film ve Dizi Seçim Rehberi <a href="#"> <img style="width: 32px; height: 32px; margin-left: 20px;" src="pdf-file.png"></a><a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="word.png"></a> </p>
+                    <!-- Additional details or attachments can be added here -->
+                </div>
+            </div>
+
+            <div id="announcementModal4" class="announcement-modal">
+                <div class="announcement-modal-content">
+                    <span class="close" onclick="closeAnnouncementModal(4)">&times;</span>
+                    <h2 style="text-align: center;">
+                        <img src="announcement.png" style="width: 32px; height: 32px;"> 
+                        Hem gerilecek hem de gülecekseniz, bu indirimi kaçırmayın! 
+                        Belirli gerilim ve komedi filmlerini bir arada satın alın ve %25 indirimden hemen faydalanın.
+                    </h2>
+
+                    <p style="text-align: center;">Seçili gerilim ve komedi filmlerini bir araya getiren kullanıcılar, 
+                        sepetlerindeki toplam tutarda %25 indirim kazanacaklar. İki farklı dünyanın keyfini çıkarın!
+                    </p>
+                    <img src="img/besttv.png" style="margin-left: 220px; width: 720px; height: 480px;">
+                    <p style="text-align: center;">İndirimli Gerilim ve Komedi Filmleri Listesi, Paket Görseli <a href="#"> <img style="width: 32px; height: 32px; margin-left: 20px;" src="pdf-file.png"></a><a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="word.png"></a> </p>
+                    <!-- Additional details or attachments can be added here -->
+                </div>
+            </div>
+
+            <div id="announcementModal5" class="announcement-modal">
+                <div class="announcement-modal-content">
+                    <span class="close" onclick="closeAnnouncementModal(5)">&times;</span>
+                    <h2 style="text-align: center;">
+                        <img src="announcement.png" style="width: 32px; height: 32px;"> 
+                        Gece alışveriş yapanlara özel indirim 
+                        fırsatı başladı! Belirli saatlerde alışveriş yapın ve seçili filmlerde ekstra indirimlerden yararlanın.
+                    </h2>
+
+                    <p style="text-align: center;">Gece saatlerinde alışveriş yapan kullanıcılar, 
+                        sepetlerindeki belirli filmlerde ekstra indirimlerden faydalanacaklar. Gece keyfinizi uygun fiyatlarla süsleyin!
+                    </p>
+                    <img src="img/besttv.png" style="margin-left: 220px; width: 720px; height: 480px;">
+                    <p style="text-align: center;">Gece Alışverişi İndirimli Film Listesi, Özel İndirim Saatleri <a href="#"> <img style="width: 32px; height: 32px; margin-left: 20px;" src="pdf-file.png"></a><a href="#"><img style="width: 32px; height: 32px; margin-left: 20px;" src="word.png"></a> </p>
+                    <!-- Additional details or attachments can be added here -->
+                </div>
+            </div>
+
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="12angrymen.html" class="tm-post-link tm-pt-60">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/12angrymen1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/12angrymen2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/12angrymen3.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">12 Angry Men</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        12 Öfkeli Adam, cinayetle suçlanan bir genç ile ilgili karar vermekle yükümlü 
+                                12 jüri üyesinin karar verme sürecini konu ediyor. Latin Amerikalı bir genç adam, 
+                                babasını öldürdüğü gerekçesiyle cinayetle suçlanır.
+                    </p>
+                    <br><br><br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Suç, Gerilim</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Nisan, 1957</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="fightclub.html" class="tm-post-link tm-pt-60">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/fightclub1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/fightclub2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/fightclub3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Fight Club</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Oregon Üniversitesi'nde yüksek lisansını yapan Chuck Palahniuk'un uzak olmayan bir gelecekte geçen ve 
+                        kafası karışık genç bir erkeği konu alan romanından yola çıkılarak çekilen 
+                        Fight Club'da filmi anlatan, ünlü bir otomobil firmasında iyi bir işe sahiptir. 
+                        Tekdüze yaşamı kronik uykusuzluk sorunuyla çekilmez bir hale gelmiştir. 
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Aksiyon, Gerilim</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 1999</span>
+                    </div>
+                    <hr>
+                </article> 
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="forrestgump.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/forrestgump1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/forrestgump2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/forrestgump3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Forrest Gump</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Forrest Gump, düşük I.Q. sahibi genç bir adamdır. Jenny ile tanıştığında ona aşık olur. 
+                                Gump aralarında Elvis Presley, Kennedy, Nixon’ın da olduğu tarihsel kişilerle kaza eseri tanışır ve 
+                                50’lerden 70’lerin sonuna kadar gelen bir süre zarfında olaylar gelişir.
+                    </p>
+                    <br><br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Komedi, Romantik</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Kasım 1994</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="godfather.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/godfather1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/godfather2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/godfather3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Godfather</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Corleone ailesi, Don Vito Corleone'nin başında olduğu, suça dayalı bir örgüt kurmuş olan 
+                        İtalyan asıllı meşhur bir ailedir. Aile, New York'taki diğer dört aileyle birlikte New York'un yeraltı 
+                        işlerini yönetmektedir. Ancak Corleone ailesini diğerlerinden ayıran özelliği, 
+                        Don Corleone'nin cebinde bozuk para gibi taşıdığı politikacılar ve yargıçlardır.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Suç, Dram</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Mart 1972</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="godfather2.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/godfather2-1.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/godfather2-2.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/godfather2-3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Godfather Part II</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Genç Vito Corleone, Amerika'ya yeni gelmiştir. 1917 yılında, New York şehri'nin yerel mafyalarından birinin 
+                        liderini öldürünce saygınlık kazanır ve korkulan biri haline gelir. 
+                        Bu arada, 50 yıl sonra, Michael Corleone, Washington'da senato komitesine aile işleriyle ilgili ifade vermektedir.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Suç, Dram</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 1974</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="goodfellas.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/goodfellas1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/goodfellas2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/goodfellas3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Goodfellas</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Sıkı Dostlar'da, Henry Hill adında bir gangster, Jimmy Conway ve Tommy De Vito adlı iki arkadaşıyla birlikte bir soyguna kalkışır. 
+                                Gözleri daha yukarda olan iki arkadaşı soyguna katılan diğerlerini öldürür ve mafya içinde yükselmeye başlarlar.
+                    </p>
+                    <br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Suç, Gerilim</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 1990</span>
+                    </div>
+                    <hr>
+                </article>
+            </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Önceki</a>
+                    <a href="index-2.html" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Sonraki</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="index.html" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-2.html" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-3.html" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-4.html" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-5.html" class="mb-2 tm-btn tm-paging-link">5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Bize Ulaş</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Bizi Ara</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail ile Ulaş</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+    <script>
+        // Functions to handle announcement modals
+        function openAnnouncementModal(announcementNumber) {
+            var modalId = "announcementModal" + announcementNumber;
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeAnnouncementModal(announcementNumber) {
+            var modalId = "announcementModal" + announcementNumber;
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+</body>
+</html>

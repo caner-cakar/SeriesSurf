@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<!-- <header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Xtra Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Xtra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Xtra Blog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+            </p>
+        </div>
+    </header> -->
+    <div class="navbarr">
+        <a href="index.html">Ana Sayfa</a>
+        <div class="dropdownn">
+            <button class="dropbtn">Ürünlerimiz 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+                <a href="onlyfilm1.html">Filmler</a>
+                <a href="onlytv.html">Diziler</a>
+            </div>
+          </div>
+        <div class="dropdownn">
+            <button class="dropbtn">Birimlerimiz 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownn-content">
+              <a href="filmbirim.html">Film Birimi</a>
+              <a href="dizibirim.html">Dizi Birimi</a>
+            </div>
+        </div>
+        <a href="about.html">Hakkımızda</a>
+        <a href="vizyon.html">Misyon-Vizyon</a>
+        <a href="contact.html">İletişim</a>
+        
+    </div>
+
+    <!-- <section class="headercontainer">
+        <div class="headerslider-wrapper">
+            <div class="headerslider">
+                <img id="headerslider-1" src="img/comment-1.jpg" alt="movie"/>
+                <img id="headerslider-2" src="img/comment-2.jpg" alt="movie"/>
+            </div>
+            <div class="headerslider-nav">
+                <a href="#headerslider-1"></a>
+                <a href="#headerslider-2"></a>
+            </div>
+        </div>
+    </section> -->
+
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                        <img src="img/movie.jpeg" width="1000px">
+                       <h2>Slide 1</h2>
+                       <p>Content for Slide 1</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                        <img src="img/2.jpeg" width="1000px">
+                       <h2>Slide 2</h2>
+                       <p>Content for Slide 2</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                       <h2>Slide 3</h2>
+                       <p>Content for Slide 3</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                       <h2>Slide 4</h2>
+                       <p>Content for Slide 4</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+
+    
+    <div class="container-fluid">
+        
+        <main class="tm-main">
+            
+                      
+            <div class="row tm-row">
+                <!-- <details class="col-12 col-md-4 tm-post" style="margin-left: -320px;">
+                    <summary>
+                        Click
+                    </summary>
+                    <p>Lorem Ipsium</p>
+                </details>    -->
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="thelordoftherings1.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/lotr1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/lotr2.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/lotr3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Lord of the Rings: The Fellowship of the Ring</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Yüzüklerin Efendisi: Yüzük Kardeşliği, dünyanın kaderini değişterecek olan yüzükten kurtulmak için verilen mücadeleyi konu ediyor. 
+                        Yıllar önce üretilen ve Orta Dünya topraklarına kandan başka hiçbir şey getirmeyen yüzüklerin sonuncusu, üretiminden yüz yıllar 
+                        sonra ortaya çıkar. Amcasının kendisine emanet ettiği yüzüğün nelere kadir olduğundan habersiz olan Frodo, 
+                        büyücü Gandalf'ın anlattıkları sonrasında dehşete kapılır.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Fantastik, Macera</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 2001</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="starwars5.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/starwars1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/starwars2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/starwars3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Star Wars: Episode V - The Empire Strikes Back</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Yıldız Savaşları: İmparator'da, İmparator Darth Vader’ın da yardımıyla asileri ezerek evreni hakimiyeti altına almaya çalışmaktadır.
+                                Casus robotlar sayesinde asilerin merkezinin Hoth gezegeninde olduğunu öğrenir ve birlikleri oraya gönderirler.
+                    </p>
+                    <br><br><br><br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Bilim Kurgu, Aksiyon</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Mayıs 1980</span>
+                    </div>
+                    <hr>
+                </article> 
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="thedarkknigt.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/darkknight1.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/darkknight2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/darkknight3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Dark Knight</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Kara Şövalye, halk için büyük bir tehdit oluşturan Joker’in ortaya çıkması ile 
+                        kaosa dönen Gotham Sokakları’nın yeniden kurtarıcılığını üstlenen Batman’in hikayesini konu ediyor. 
+                        Suç işleyenlerden arındırılan bir yer, bir zaman sonra yeniden tehdit altında kalabilir ve 
+                        işte o zaman yeniden kolları sıvayacak olanların mücadelesi de daha keskin olarak hayata geçecektir.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Aksiyon, Suç</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Temmuz 2008</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="thegoodthebadandtheugly.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/goodbandugly2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/goodbandugly2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/goodbandugly3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Good, the Bad and the Ugly</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        İyi, Kötü ve Çirkin, üç silah arkadaşının maceralarını konu ediyor. 
+                        Ortak bir hedefe doğru değişik nedenlerle yol almakta olan üç silah arkadaşı aslında kader 
+                        açısından yolları kesişmiş insanlardır. İsimleri İyi, Kötü ve Çirkin olan bu kişiler için o 
+                        dönemdeki Amerikan İç Savaşı bir araçtır.
+                    </p>
+                    <br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Western, Aksiyon</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 1966</span>
+                    </div>
+                    <hr>
+                </article>
+                
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="thelordoftherings2.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/lotr2-1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/lotr2-2.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/lotr2-3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Lord of the Rings: The Two Towers</h2>
+                    </a>
+                                        
+                    <p class="tm-pt-30">
+                        Yüzüklerin Efendisi: İki Kule'de, Yüzük Kardeşliği üyelerinin her birinin, kardeşlik bozulduktan sonra başlarına gelenler
+                        anlatılıyor. Kahramanlarımız, gruplar halinde Orta Dünya’nın en tehlikeli yerlerinde maceralar yaşayacaklar, yeni kavimler 
+                        ve çoktan unutulmuş medeniyetlerle tanışacaklar.
+                    </p>
+                    <br><br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Fantastik, Macera</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Aralık 2002</span>
+                    </div>
+                    <hr>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="shawshankredemption.html" class="tm-post-link tm-pt-20">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div class="slider-item">
+                                    <img src="img/shawshankredemption1.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/shawshankredemption2.jpg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="img/shawshankredemption3.jpg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>                   
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Shawshank Redemption</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                       
+                        1947 yılında başarılı bir bankacı olan Andy Dufrense aynı başarıyı evliliğinde gösterememektedir ve eşi 
+                        tarafından başka bir erkekle aldatılmaktadır. Bunu kabullenemeyen Andy, eşinin aşığıyla buluştuğu bir gece 
+                        alkolün de verdiği cesaretle silahına mermileri doldurur ve öfkeyle aracından iner.
+                    </p>
+                    <br><br>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Dram, Suç</span>
+                        <span class="tm-color-primary">Vizyon Tarihi: Eylül 1994</span>
+                    </div>
+                    <hr>
+                </article>
+            </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="index-2.html" class="mb-2 tm-btn tm-btn-primary tm-prev-next tm-mr-20">Önceki</a>
+                    <a href="index-4.html" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Sonraki</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item">
+                                <a href="index.html" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-2.html" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item active">
+                                <a href="index-3.html" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-4.html" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="index-5.html" class="mb-2 tm-btn tm-paging-link">5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Bize Ulaş</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Bizi Ara</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail ile Ulaş</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
